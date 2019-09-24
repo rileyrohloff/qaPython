@@ -22,6 +22,7 @@ def test_lava_hound():
     driver.find_element(By.CSS_SELECTOR, "[href*='/cards']").click()
     time.sleep(2)
     lava_hound = driver.find_element(By.CSS_SELECTOR, "[href*='Lava+Hound']")
+
     assert lava_hound.is_displayed()
 
 
