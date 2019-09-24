@@ -34,6 +34,7 @@ def test_common_cards_only():
     time.sleep(2)
     ice_spirit = driver.find_element(By.CSS_SELECTOR, "[href*='Ice+Spirit']")
     commonBox = driver.find_element(By.CSS_SELECTOR, "[name*='common-cards']")
+
     commonBox.click()
 
     assert ice_spirit.is_displayed() == False
